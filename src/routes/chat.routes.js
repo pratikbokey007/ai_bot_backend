@@ -1,13 +1,7 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
+const { chat } = require("../controllers/chat.controller");
 
-router.post('/chat', (req, res) => {
-  const { message } = req.body;
-
-  // temporary dummy response
-  res.json({
-    reply: `You said: ${message}`
-  });
-});
+router.post("/chat", chat);
 
 module.exports = router;
