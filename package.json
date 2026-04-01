@@ -14,12 +14,26 @@
   "type": "commonjs",
   "dependencies": {
     "@google/genai": "^1.46.0",
+    "@google/generative-ai": "^0.24.1",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "mongoose": "^9.3.2"
+    "express-session": "^1.19.0",
+    "groq-sdk": "^1.1.2",
+    "mongoose": "^9.3.2",
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratikbokey007/ai_bot_backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pratikbokey007/ai_bot_backend/issues"
+  },
+  "homepage": "https://github.com/pratikbokey007/ai_bot_backend#readme"
 }
