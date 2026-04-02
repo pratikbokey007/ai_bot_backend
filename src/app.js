@@ -6,6 +6,7 @@ const connectDB = require("./config/db");
 const passport = require("./config/passport");
 const chatRoutes = require("./routes/chat.routes");
 const authRoutes = require("./routes/auth.routes");
+const productRoutes = require("./routes/product.routes");
 const logger = require("./middlewares/logger.middleware");
 
 dotenv.config();
@@ -29,6 +30,7 @@ app.use(passport.session());
 app.use(logger);
 app.use("/api", chatRoutes);
 app.use("/auth", authRoutes);
+app.use("/product", productRoutes);
 
 app.get("/", (req, res) => {
   res.send("API is running");
